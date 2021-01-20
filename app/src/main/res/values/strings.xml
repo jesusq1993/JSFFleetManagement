@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JSF Fleet Management</string>
+    <string name="description_loginlogo">Logo at login activity.</string>
+</resources>
