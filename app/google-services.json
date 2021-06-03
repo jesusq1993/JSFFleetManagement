@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "559130936706",
+    "project_id": "jsf-fleet-management",
+    "storage_bucket": "jsf-fleet-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559130936706:android:5686c3c79eb4443e12bb9b",
+        "android_client_info": {
+          "package_name": "com.example.jsffleetmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559130936706-a5cupe7117je8n222k5sud0nm550ce1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxWOhxiHqgrvUV2L6qSerlB5_wD3ezSJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559130936706-a5cupe7117je8n222k5sud0nm550ce1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -34,7 +34,9 @@
             android:id="@+id/edittxv_username"
             android:layout_width="match_parent"
             android:layout_height="64dp"
-            android:hint="Username" />
+            android:autofillHints=""
+            android:hint="@string/username"
+            android:inputType="text" />
 
         <TextView
             android:id="@+id/textView"
@@ -42,17 +44,31 @@
             android:layout_height="34dp" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/editTxv_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:onClick="login"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center_horizontal|center_vertical"
-            android:text="Trouble logging in click here." />
+            android:text="@string/trouble_logging_in_click_here"
+            android:onClick="addUser"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
