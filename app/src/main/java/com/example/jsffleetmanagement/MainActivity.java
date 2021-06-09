@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
 
-        if(mAuth.getCurrentUser()!=null)
+        if(user != null)
         {
             //that means the user is already logged in
             database = FirebaseDatabase.getInstance();
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addUser(View view) {
-        Intent i = new Intent(this, addUserActivity.class);
+        Intent i = new Intent(getApplicationContext(), addUserActivity.class);
         startActivity(i);
     }
 }
