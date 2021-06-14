@@ -5,4 +5,7 @@
     <string name="trouble_logging_in_click_here">Trouble logging in click here.</string>
     <string name="login">Login</string>
     <string name="username">Username</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
 </resources>

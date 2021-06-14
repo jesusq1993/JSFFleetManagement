@@ -41,7 +41,7 @@ public class addUserActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
 
-        if(mAuth.getCurrentUser() != null){
+        if(user != null){
             startActivity(new Intent(getApplicationContext(),DashboardActivity.class));
             finish();
         }
@@ -79,10 +79,21 @@ public class addUserActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()) {
+
+                    //use User class to write to user section in realtime database
+                    User newUser = new User(firstName, lastName, email);
+
+                    //gets database instance and reference to location to write data
+                    database = FirebaseDatabase.getInstance();
+                    mDatabase = database.getReference("Users");
+                    mDatabase.child(mAuth.getCurrentUser().getUid()).setValue(newUser);
+
+
                     Toast.makeText(addUserActivity.this,"User Created.",Toast.LENGTH_SHORT).show();
+                    finish();
                     startActivity(new Intent(getApplicationContext(),MainActivity.class));
                 }else {
-                    Toast.makeText(addUserActivity.this,"Error!"+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(addUserActivity.this,"Error! "+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
                 }
             }
         });
