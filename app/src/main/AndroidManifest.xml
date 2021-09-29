@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JSFFleetManagement">
-        <activity android:name=".addUserActivity"></activity>
+        <activity
+            android:name=".VehicleActivity"
+            android:exported="true" />
+        <activity android:name=".addUserActivity" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

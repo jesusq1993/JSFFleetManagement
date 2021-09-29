@@ -67,15 +67,15 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-
-
-
     }
-
 
     public void logout(View view) {
         mAuth.signOut();
         finish();
         startActivity(new Intent(getApplicationContext(),MainActivity.class));
+    }
+
+    public void gotoVehicles(View view) {
+        Intent intent = new Intent(this,VehicleActivity.class);
     }
 }

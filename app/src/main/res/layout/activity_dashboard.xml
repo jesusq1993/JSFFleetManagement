@@ -64,7 +64,8 @@
                 android:layout_weight="1"
                 android:drawableTop="@drawable/ic_car_24"
                 android:padding="16dp"
-                android:text="Vehicle" />
+                android:text="Vehicle"
+                android:onClick="gotoVehicles"/>
 
             <Button
                 android:id="@+id/button2"
