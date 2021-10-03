@@ -26,16 +26,18 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/brawler"
             android:gravity="center"
-            android:text="@string/dashboard"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="24sp"
             android:typeface="normal" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgView_profile_pic"
-            android:layout_width="match_parent"
-            android:layout_height="128dp"
-            app:srcCompat="@drawable/headshot_image" />
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:src="@drawable/headshot_image"
+            android:onClick="photoAction"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
 
         <TextView
             android:id="@+id/textview_name"
